@@ -6,7 +6,7 @@
 #    By: asalo <asalo@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/23 14:37:45 by asalo             #+#    #+#              #
-#    Updated: 2023/11/17 11:27:27 by asalo            ###   ########.fr        #
+#    Updated: 2023/11/19 14:23:17 by asalo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,4 +52,4 @@ fclean: 	clean
 
 re: 		fclean all
 
-.PHONY  :		all bonus clean fclean re
+.PHONY:		all bonus clean fclean re
