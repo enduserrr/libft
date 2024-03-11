@@ -6,7 +6,7 @@
 #    By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/23 14:37:45 by asalo             #+#    #+#              #
-#    Updated: 2024/03/09 10:06:59 by asalo            ###   ########.fr        #
+#    Updated: 2024/03/11 10:44:34 by asalo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS	= $(addprefix $(SRC_DIR)/is/, ft_isalnum.c ft_isalpha.c \
 		$(addprefix $(SRC_DIR)/str/, ft_split.c ft_strchr.c ft_strdup.c \
 			ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 			ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c \
-			ft_substr.c) \
+			ft_substr.c ft_strcmp.c) \
 		$(addprefix $(SRC_DIR)/lst/, ft_lstadd_back_bonus.c \
 			ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c \
 			ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstnew_bonus.c \
