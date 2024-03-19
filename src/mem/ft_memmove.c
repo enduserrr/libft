@@ -6,11 +6,17 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 10:03:05 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/05 11:49:27 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 21:13:57 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief	Copy 'len' bytes from the memory area pointed by 'src'
+ * 			to the memory area pointed by 'dst', while handling overlapping
+ * 			memory regions correctly.
+*/
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -6,12 +6,15 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 18:37:45 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/05 11:48:36 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 20:46:31 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	return non zero value if true and 0 if not.
+ */
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

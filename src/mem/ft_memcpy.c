@@ -6,12 +6,16 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 16:01:38 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/05 11:49:24 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 21:13:39 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Copy the memory starting from src pointer for 'n' bytes
+ * 			to the destination pointed by 'dst'.
+*/
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;

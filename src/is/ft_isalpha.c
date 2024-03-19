@@ -6,16 +6,16 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 18:04:47 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/05 11:48:29 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 20:46:13 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	return non zero value if true and 0 if not.
+ */
 int	ft_isalpha(int c)
 {
-	if ((c > 64 && c < 91) || (c > 96 && c <= 122))
-		return (1);
-	else
-		return (0);
+	return ((c > 64 && c < 91) || (c > 96 && c <= 122));
 }

@@ -6,15 +6,16 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 18:45:16 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/05 11:48:43 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 20:46:21 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	return non zero value if true and 0 if not.
+ */
 int	ft_isprint(int c)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	return (0);
+	return (c > 31 && c < 127);
 }

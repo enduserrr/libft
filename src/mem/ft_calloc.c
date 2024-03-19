@@ -6,12 +6,16 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:38:32 by asalo             #+#    #+#             */
-/*   Updated: 2023/12/12 10:26:06 by asalo            ###   ########.fr       */
+/*   Updated: 2024/03/19 21:13:34 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Dynamically allocate memory for 'count' number of objects
+ * 			of a specified 'size', initializing the allocated memory to zero. 
+*/
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*mem;
