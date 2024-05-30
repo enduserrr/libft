@@ -6,7 +6,7 @@
 /*   By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:49:45 by asalo             #+#    #+#             */
-/*   Updated: 2024/02/07 11:45:46 by asalo            ###   ########.fr       */
+/*   Updated: 2024/05/30 10:23:00 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ char	**ft_split(char const *s, char c)
 		new[i] = ft_calloc((slen + 1), sizeof(char));
 		if (!new[i])
 			return (free_array(new));
-		ft_strlcpy(new[i], str, slen + 1);
+		ft_strlcpy(*new, str, slen + 1);
 		i++;
 	}
 	new[i] = NULL;

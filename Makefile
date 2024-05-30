@@ -6,7 +6,7 @@
 #    By: asalo <asalo@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/23 14:37:45 by asalo             #+#    #+#              #
-#    Updated: 2024/03/19 20:29:14 by asalo            ###   ########.fr        #
+#    Updated: 2024/05/30 10:24:40 by asalo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SUB_DIR	= is to mem str put lst gnl printf
 
 SRCS	= $(addprefix $(SRC_DIR)/is/, ft_isalnum.c ft_isalpha.c \
 			ft_isascii.c ft_isdigit.c ft_isprint.c ft_isspace.c) \
+		$(addprefix $(SRC_DIR)/lookup/, ft_lookup_space.c) \
 		$(addprefix $(SRC_DIR)/to/, ft_atoi.c ft_itoa.c ft_tolower.c \
 			ft_toupper.c ft_atol.c ft_atod.c) \
 		$(addprefix $(SRC_DIR)/mem/, ft_bzero.c ft_calloc.c ft_memchr.c \
@@ -28,10 +29,10 @@ SRCS	= $(addprefix $(SRC_DIR)/is/, ft_isalnum.c ft_isalpha.c \
 			ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c ft_strlen.c \
 			ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c \
 			ft_substr.c ft_strcmp.c) \
-		$(addprefix $(SRC_DIR)/lst/, ft_lstadd_back_bonus.c \
-			ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c \
-			ft_lstiter_bonus.c ft_lstlast_bonus.c ft_lstnew_bonus.c \
-			ft_lstsize_bonus.c) \
+		$(addprefix $(SRC_DIR)/lst/, ft_lstadd_back.c \
+			ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
+			ft_lstiter.c ft_lstlast.c ft_lstnew.c \
+			ft_lstsize.c ft_lstmap.c) \
 		$(addprefix $(SRC_DIR)/gnl/, get_next_line_utils.c get_next_line.c) \
 		$(addprefix $(SRC_DIR)/printf/, ft_print_format.c ft_printf.c)
 
@@ -53,11 +54,11 @@ $(NAME):	$(OBJS)
 			@ar -rcs $(NAME) $(OBJS)
 
 clean:
-			$(RM) $(OBJS)
+			@$(RM) $(OBJS)
 			@$(RM) -r $(OBJ_DIR)
 
 fclean:		clean
-			$(RM) $(NAME)
+			@$(RM) $(NAME)
 
 re:			fclean all
 
