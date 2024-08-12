@@ -6,7 +6,7 @@
 /*   By: asalo <asalo@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 12:02:15 by asalo             #+#    #+#             */
-/*   Updated: 2024/07/16 17:28:33 by asalo            ###   ########.fr       */
+/*   Updated: 2024/07/24 18:15:20 by asalo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 
 	if (!s1 || !s2)
-		return (0);
-	new = (char *)malloc(sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1);
+		return (NULL);
+	new = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
 	if (!new)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (s1[i])
 	{
@@ -36,6 +36,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
-	new[i] = 0;
+	new[i] = '\0';
 	return (new);
 }
